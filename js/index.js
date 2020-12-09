@@ -54,7 +54,7 @@ function handleBlur(evt) {
 }
 
 function handleSubmitButtonState() {
-  button.disabled = !!errors.email || !!errors.password;
+  button.disabled = !!errors.email || !!errors.password || !!!data.email || !!!data.password;
 }
 
 function validatePassword(value) {
