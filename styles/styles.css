@@ -36,6 +36,14 @@
     max-width: 475px;
 }
 
+.container form .form-container input {
+    border: 1px solid #FFFFFF;
+}
+
+.container form .form-container input.error {
+    border: 1px solid #D62F2C;
+}
+
 .container form .form-container h1 {
     color: #2D3032;
     font-size: 36px;
@@ -44,7 +52,18 @@
 .container form .form-container button {
     height: 60px;
     margin-top: 60px;
-    background-color: #d62f2c;
+    background-color: #D62F2C;
     color: #FFFFFF;
     font-weight: bold;
+}
+
+.container form .form-container button:disabled {
+    background-color: #AAAAAA;
+}
+
+.error-text {
+    color: #D62F2C;
+    font-size: 13px;
+    height: 15px;
+    display: inline;
 }
