@@ -2,25 +2,27 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/reset.css" />
-    <link rel="stylesheet" href="./styles/styles.css" />
-    <script src="./js/index.js"></script>
-    <title>LPPA</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/reset.css" />
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <script src="./js/index.js"></script>
+  <title>LPPA</title>
 </head>
 
 <body>
-    <div class="container">
-        <form>
-            <div class="form-container">
-                <h1>Log in</h1>
-                <input placeholder="Username" type="text" name="username" />
-                <input placeholder="Password" type="password" name="password" />
-                <button type="submit">Log in</button>
-            </div>
-        </form>
-    </div>
+  <div class="container">
+    <form>
+      <div class="form-container">
+        <h1>Log in</h1>
+        <input class="input" placeholder="Email" type="text" name="email" />
+        <div class="error-text email-error"></div>
+        <input class="input" placeholder="Password" type="password" name="password" />
+        <div class="error-text password-error"></div>
+        <button id="login-button" disabled type="submit">Log in</button>
+      </div>
+    </form>
+  </div>
 </body>
 
 </html>
